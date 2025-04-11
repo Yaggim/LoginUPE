@@ -1,0 +1,6 @@
+C:\Users\yaggi\source\repos\Logueo\DAL\bin\Debug\DAL.dll
+C:\Users\yaggi\source\repos\Logueo\DAL\bin\Debug\DAL.pdb
+C:\Users\yaggi\source\repos\Logueo\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\yaggi\source\repos\Logueo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\yaggi\source\repos\Logueo\DAL\obj\Debug\DAL.dll
+C:\Users\yaggi\source\repos\Logueo\DAL\obj\Debug\DAL.pdb
