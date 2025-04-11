@@ -1,0 +1,62 @@
+## Archivos de Visual Studio ##
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+## Archivos de compilación ##
+bin/
+obj/
+[Bb]uild/
+[Bb]uild[Ll]og.*
+*.log
+*.tlog
+## Archivos de paquetes y dependencias ##
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+## Archivos de publicación ##
+*.publish.xml
+*.dbmdl
+## Archivos temporales y otros ##
+*.tmp
+*.bak
+*.old
+*.orig
+*.Cache
+*.pidb
+*.svclog
+## Archivos de configuración del entorno ##
+*.userprefs
+*.userosscache
+*.sdf
+*.sln.docstates
+## Archivos de Rider (JetBrains) ##
+.idea/
+*.sln.iml
+## Archivos de Test Result ##
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+## Archivos generados por herramientas ##
+_ReSharper*/
+*.DotSettings.user
+*.DotSettings
+*.resharper
+*.ncrunchproject
+*.ncrunchsolution
+*.nunit.xml
+## Archivos de Azure y herramientas relacionadas ##
+*.azurePubxml
+*.azurePubxml.user
+PublishProfiles/
+## Otros posibles ##
+*.vspscc
+*.vssscc
+*.pdb
+*.mdb
