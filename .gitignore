@@ -6,8 +6,12 @@
 *.userosscache
 *.sln.docstates
 ## Archivos de compilación ##
-bin/
-obj/
+BLL/bin/
+DAL/bin/
+LoginPrueba/bin/
+BLL/obj/
+DAL/obj/
+LoginPrueba/obj/
 [Bb]uild/
 [Bb]uild[Ll]og.*
 *.log
