@@ -9,56 +9,39 @@ namespace BLL
 {
     public class Usuario
     {
-        private string _userName;
 
-        public string UserName
+        public bool CrearUsuario(BE.Usuario usuario)
         {
-            get { return _userName; }
-            set { _userName = value; }
-        }
 
-        private string _clave;
+            DAL.Usuario dalUsuario = new DAL.Usuario();
+            dalUsuario.Crear(usuario);
 
-        public string Clave
-        {
-            get { return _clave; }
-            set { _clave = value; }
-        }
-
-        private string _email;
-
-        public string Email
-        {
-            get { return _email; }
-            set { _email = value; }
-        }
-
-        private int _DNI;
-
-        public int DNI
-        {
-            get { return _DNI; }
-            set { _DNI = value; }
+            return true;
         }
 
 
+        /// <summary>
+        /// Valida el usuario y clave con los datos en la base de datos.
+        /// </summary>
+        /// <param name="usuario">Nombre de usuario pasado por parametro</param>
+        /// <param name="clave">Clave del usuario pasado por parametro</param>
+        /// <returns></returns>
         public bool Loguearse(string usuario, string clave)
         {
-            DAL.Usuario unLogin = new DAL.Usuario();
+            DAL.Usuario dalUsuario = new DAL.Usuario();
 
-            DataTable dt = unLogin.IniciarSesion();
+            List<BE.Usuario> usuarios = dalUsuario.Listar();
 
-
-            foreach (DataRow fila in dt.Rows)
+            foreach (BE.Usuario unUsuario in usuarios)
             {
-                if(fila["usuario"].ToString().Trim() == usuario.Trim() && fila["clave"].ToString().Trim() == clave.Trim())
+                if (unUsuario.Clave==clave.Trim() && unUsuario.UserName == usuario.Trim())
                 {
                     return true;
                 }
             }
 
+
             return false;
         }
-
     }
 }

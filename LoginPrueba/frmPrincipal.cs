@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LoginPrueba
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -31,12 +31,14 @@ namespace LoginPrueba
 
             if(unLogin.Loguearse(usuario, clave))
             {
-                MessageBox.Show("Inicio sesión correctamente");
+                Form formularioCrearUsuario = new Administracion.CrearUsuario();
+                formularioCrearUsuario.Show();
             }
             else
             {
                 MessageBox.Show("El usuario o la clave es incorrecta");
             }
         }
+
     }
 }
