@@ -1,7 +1,7 @@
 ﻿
 namespace LoginPrueba
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
