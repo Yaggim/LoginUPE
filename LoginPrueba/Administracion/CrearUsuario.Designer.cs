@@ -45,6 +45,7 @@ namespace LoginPrueba.Administracion
             this.tboxPerfil = new System.Windows.Forms.TextBox();
             this.tboxUserName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnConsultarUsuarios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudDNI)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +67,7 @@ namespace LoginPrueba.Administracion
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label1
             // 
@@ -179,11 +181,22 @@ namespace LoginPrueba.Administracion
             this.label7.TabIndex = 14;
             this.label7.Text = "UserName";
             // 
+            // btnConsultarUsuarios
+            // 
+            this.btnConsultarUsuarios.Location = new System.Drawing.Point(493, 319);
+            this.btnConsultarUsuarios.Name = "btnConsultarUsuarios";
+            this.btnConsultarUsuarios.Size = new System.Drawing.Size(139, 23);
+            this.btnConsultarUsuarios.TabIndex = 16;
+            this.btnConsultarUsuarios.Text = "Ver todos los usuarios";
+            this.btnConsultarUsuarios.UseVisualStyleBackColor = true;
+            this.btnConsultarUsuarios.Click += new System.EventHandler(this.btnConsultarUsuarios_Click);
+            // 
             // CrearUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnConsultarUsuarios);
             this.Controls.Add(this.tboxUserName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tboxPerfil);
@@ -226,5 +239,6 @@ namespace LoginPrueba.Administracion
         private System.Windows.Forms.TextBox tboxPerfil;
         private System.Windows.Forms.TextBox tboxUserName;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnConsultarUsuarios;
     }
 }
