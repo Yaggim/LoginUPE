@@ -43,5 +43,16 @@ namespace LoginPrueba.Administracion
             
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnConsultarUsuarios_Click(object sender, EventArgs e)
+        {
+            frmConsultaUsuarios formulario = new frmConsultaUsuarios();
+            formulario.ShowDialog();
+        }
     }
 }
